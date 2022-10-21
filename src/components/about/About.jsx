@@ -28,17 +28,17 @@ const About = () => {
 						<article className="about__card">
 							<FiUsers className="about__icon" />
 							<h5>Clients</h5>
-							<small>100+ Worldwide</small>
+							<small>10+ Worldwide</small>
 						</article>
 
 						<article className="about__card">
 							<VscFolderLibrary className="about__icon" />
 							<h5>Project</h5>
-							<small>80+ Completed</small>
+							<small>20+ Completed</small>
 						</article>
 					</div>
 					<p>
-						Добрый день, меня зовут Влад, опыт работы 2 года в сфере frontend разработки.
+						Добрый день, меня зовут Владимир, опыт работы 2 года в сфере frontend разработки.
 						<br />
 						<br />
 						Основные навыки и умения: Уверенное владение HTML, БЭМ, CSS, CSS-препроцессоры,
