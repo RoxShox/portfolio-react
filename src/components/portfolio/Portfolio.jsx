@@ -26,7 +26,7 @@ const data = [
 		id: 3,
 		image: IMG3,
 		title: 'vr-soft',
-		github: 'https://github.com/tranzet23/VR_soft',
+		github: 'https://github.com/RoxShox/vr-proj',
 		demo: 'https://vr-arsoft.com/about/',
 	},
 	{
