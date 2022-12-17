@@ -6,6 +6,8 @@ import IMG3 from '../../assets/img_2.png'
 import IMG4 from '../../assets/img_3.png'
 import IMG5 from '../../assets/christmas_trees.png'
 import IMG6 from '../../assets/marvel.png'
+import IMG7 from '../../assets/chat.PNG'
+import IMG8 from '../../assets/dashboard.PNG'
 
 const data = [
 	{
@@ -50,6 +52,20 @@ const data = [
 		github: 'https://github.com/RoxShox/Marvel-react',
 		demo: 'https://marvel-react-one.vercel.app/',
 	},
+	{
+		id: 7,
+		image: IMG7,
+		title: 'React-chat',
+		github: 'https://github.com/RoxShox/full-stack-chat-react',
+		demo: '',
+	},
+	{
+		id: 8,
+		image: IMG8,
+		title: 'React-dashboard',
+		github: 'https://github.com/RoxShox/react-mui-dashboard',
+		demo: 'https://react-mui-dashboard-ebon.vercel.app/',
+	},
 ]
 
 const Portfolio = () => {
@@ -67,7 +83,7 @@ const Portfolio = () => {
 							</div>
 							<h3>{title}</h3>
 							<div className="portfolio__item-cta">
-								<a href={github} className="btn">
+								<a href={github} className="btn" target="_blank">
 									Github
 								</a>
 								{demo === '' ? (
