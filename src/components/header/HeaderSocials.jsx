@@ -13,7 +13,7 @@ const HeaderSocials = () => {
 			<a href="https://t.me/tlaxaL" target="_blank">
 				<SiTelegram />
 			</a>
-			<a href="" target="_blank">
+			<a href="https://instagram.com" target="_blank">
 				<BsInstagram />
 			</a>
 		</div>

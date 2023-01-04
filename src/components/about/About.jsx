@@ -56,6 +56,19 @@ const About = () => {
 						месте
 						<br />
 					</p>
+					<h4 className="about__experience-title">Опыт работы</h4>
+					<div></div>
+					<p>
+						<span style={{ fontWeight: 700, color: '#bcb8b8eb', fontSize: '18px' }}>
+							Октябрь 2021 — Ноябрь 2022
+						</span>{' '}
+						<br />
+						Clishin Agency Frontend-разработчик <br />- Верстка сайтов из предоставленных дизайнером
+						макетов (PSD). <br />- Адаптивная, кроссбраузерня верстка. <br />- Верстка e-mail.{' '}
+						<br />- Программирование поведения элементов. <br />- Анимация элементов (css3, js). -
+						Оптимизация скорости загрузки сайтов. <br />
+						Технологии: JS, jQuery, gulp, gsap, sass, axios, bootstrap , grid.
+					</p>
 
 					<a href="#contact" className="btn btn-primary">
 						Let's Talk
