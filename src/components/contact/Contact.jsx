@@ -1,25 +1,32 @@
-import React from 'react'
-import './contact.css'
-import { MdOutlineMail } from 'react-icons/md'
-import { FaTelegramPlane } from 'react-icons/fa'
-import { SiWhatsapp } from 'react-icons/si'
-import { useRef } from 'react'
-import emailjs from 'emailjs-com'
+import React from "react"
+import "./contact.css"
+import { MdOutlineMail } from "react-icons/md"
+import { FaTelegramPlane } from "react-icons/fa"
+import { SiWhatsapp } from "react-icons/si"
+import { useRef } from "react"
+import emailjs from "emailjs-com"
 
 const Contact = () => {
 	const form = useRef()
 
-	const sendEmail = e => {
+	const sendEmail = (e) => {
 		e.preventDefault()
 
-		emailjs.sendForm('service_04ojfdc', 'template_05hr1sp', form.current, 'e-kc0So6t9Cykcf-y').then(
-			result => {
-				console.log(result.text)
-			},
-			error => {
-				console.log(error.text)
-			},
-		)
+		emailjs
+			.sendForm(
+				"service_04ojfdc",
+				"template_05hr1sp",
+				form.current,
+				"e-kc0So6t9Cykcf-y"
+			)
+			.then(
+				(result) => {
+					console.log(result.text)
+				},
+				(error) => {
+					console.log(error.text)
+				}
+			)
 		e.target.reset()
 	}
 
@@ -33,7 +40,7 @@ const Contact = () => {
 					<article className="contact__option">
 						<MdOutlineMail className="contact__option-icon" />
 						<h4>Email</h4>
-						<h5>19romale77@gmail.com</h5>
+						<h5>vovakorenev1999@gmail.com</h5>
 						<a href="mailto:19romale77@gmail.com" target="_blank">
 							Send a message
 						</a>
@@ -50,7 +57,10 @@ const Contact = () => {
 						<SiWhatsapp className="contact__option-icon" />
 						<h4>WhatsApp</h4>
 						<h5>+380990551079</h5>
-						<a href="https://api.whatsapp.com/send?phone=380990551079" target="_blank">
+						<a
+							href="https://api.whatsapp.com/send?phone=380990551079"
+							target="_blank"
+						>
 							Send a message
 						</a>
 					</article>
@@ -59,7 +69,12 @@ const Contact = () => {
 				<form ref={form} onSubmit={sendEmail}>
 					<input type="text" name="name" placeholder="Ваше имя" required />
 					<input type="email" name="email" placeholder="Email" required />
-					<textarea name="message" rows="7" placeholder="Ваше сообщение" required />
+					<textarea
+						name="message"
+						rows="7"
+						placeholder="Ваше сообщение"
+						required
+					/>
 					<button type="submit" className="btn btn-primary">
 						Send Message
 					</button>
